@@ -10,7 +10,7 @@ st.write(
     "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )
 
-# Ask user for their OpenAI API key via `st.text_input`.
+# Ask user for their Gemini API key via `st.text_input`.
 gemini_api_key = os.getenv("GEMINI_API_KEY") or st.text_input("Gemini API Key", type="password")
 if not gemini_api_key:
     st.error("Please provide a Gemini API key to continue.")
